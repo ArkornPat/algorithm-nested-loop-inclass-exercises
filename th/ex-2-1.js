@@ -7,6 +7,17 @@
 */
 
 // Start coding here
+function generatePattern(size){
+    let pattern = ""
+    for(let i = 1; i <= size; i++){
+        for(let j = 1; j <= size - i + 1; j++){
+            pattern += "*"
+        }
+        pattern += "\n" 
+    }
+    return pattern
+}
+
 
 console.log(generatePattern(3)); 
 
